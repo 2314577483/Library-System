@@ -22,11 +22,11 @@ Authors: [Zhenjie Liu](https://github.com/2314577483)
   
    [Google Test Framework](https://github.com/google/googletest) - A tool where we can create our own test files and test if the code of this project works correctly.
 
-   [Vim](https://www.vim.org/) - A text ediotr on Linux.
+   [Vim](https://www.vim.org/) - A text editor on Linux.
    
    [Valgrind](https://valgrind.org/) - An instrumentation framework for building dynamic analysis tools. We will use it to check if there are any memeroy leak problems on our project.
 
-   [Visual Studio](https://visualstudio.microsoft.com/vs/features/cplusplus/) - A high level C and C++ text editor. This is the main text editor for this project.
+   [Visual Studio](https://visualstudio.microsoft.com/vs/features/cplusplus/) - A high level C and C++ text editor. This is the main text editor we will use for this project.
 
  ### Input/Output Of Project
    Input - We will require users to create their own library accounts when they first use the library system. After that, the information of acounts will be automatically saved on the server. When they next log in the system, we will compare the information entered to the database to match whether the account information was entered correctly. Other inputs will include the inforamtion of books like book name, authors name, ISBN number, cover, genre, availability, price, location. 
