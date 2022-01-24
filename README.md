@@ -5,9 +5,6 @@ Authors: \<[Zhenjie Liu](https://github.com/2314577483)\>
  
 
 ## Project Description
- ### General Description
- 
-
  ### Why Is It Interesting To Us
 
 
@@ -32,6 +29,10 @@ Authors: \<[Zhenjie Liu](https://github.com/2314577483)\>
    [Visual Studio](https://visualstudio.microsoft.com/vs/features/cplusplus/) - A high level C and C++ text editor. This is the main text editor for this project.
 
  ### Input/Output Of Project
+   Input - We will require users to create their own library accounts when they first use the library system. After that, the information of acounts will be automatically saved on the server. When they next log in to their information, we compare the information entered to the database to match whether the account information was entered correctly. Other inputs will include the inforamtion of books like book name, authors name, ISBN number, cover, genre, availability, price, location. 
+   
+   Output - The system will automatically matched the information from the users input. If the book is available, the system will output the name, author name, ISBN number, cover, genre, price and location of the book to help users find it.
+
 
  > ## Phase II
  > In addition to completing the "Class Diagram" section below, you will need to:
