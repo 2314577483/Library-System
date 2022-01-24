@@ -15,11 +15,11 @@ Authors: \<[Zhenjie Liu](https://github.com/2314577483)\>
  
    [C++](https://www.cplusplus.com/) - C++ 11 is the primary programming language for this project.
 
+   [Clion](https://www.jetbrains.com/clion/) - 
+   
    [CMake](https://cmake.org/) - 
 
-   [Clion](https://www.jetbrains.com/clion/)
-
-   [Git](https://git-scm.com/)
+   [Git](https://git-scm.com/) - 
 
    [Git Hub](https://github.com)
   
