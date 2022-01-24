@@ -17,17 +17,17 @@ Authors: \<[Zhenjie Liu](https://github.com/2314577483)\>
 
    [Clion](https://www.jetbrains.com/clion/) - A high level C and C++ text editor.
    
-   [CMake](https://cmake.org/) - 
+   [CMake](https://cmake.org/) - An open-source, cross-platform family of tools designed to build, test and package software. 
 
-   [Git](https://git-scm.com/) - 
+   [Git](https://git-scm.com/) - A distributed version control system that allow us to complete different commands.
 
-   [Git Hub](https://github.com) - 
+   [Git Hub](https://github.com) - A version control system that different partners can work the same project together online. It's the main version control system that we will use through the whole project.
   
-   [Google Test Framework](https://github.com/google/googletest) - 
+   [Google Test Framework](https://github.com/google/googletest) - A tool where we can create our own test files and test if the code of this project works correctly.
 
    [Vim](https://www.vim.org/) - A text ediotr on Linux.
    
-   [Valgrind](https://valgrind.org/) - Valgrind is an instrumentation framework for building dynamic analysis tools. We will use it to check if there are any memeroy leak problems on our project.
+   [Valgrind](https://valgrind.org/) - An instrumentation framework for building dynamic analysis tools. We will use it to check if there are any memeroy leak problems on our project.
 
    [Visual Studio](https://visualstudio.microsoft.com/vs/features/cplusplus/) - A high level C and C++ text editor. This is the main text editor for this project.
 
