@@ -5,16 +5,31 @@ Authors: \<[Zhenjie Liu](https://github.com/2314577483)\>
  
 
 ## Project Description
- * General Description
+ # General Description
+ 
+
+ # Why Is It Interesting to Us
 
 
- * Why Is It Interesting to Us
+ # Languages/Tools/Technologies 
+ 
+   [C++](https://www.cplusplus.com/) - C++ 11 is the primary programming language for this project.
 
+   [CMake](https://cmake.org/) - 
 
- * Languages/Tools/Technologies 
+   [Clion](https://www.jetbrains.com/clion/)
 
+   [Git](https://git-scm.com/)
 
- * Input/Output of Project
+   [Git Hub](https://github.com)
+  
+   [Google Test Framework](https://github.com/google/googletest)
+
+   [Vim](https://www.vim.org/)
+
+   [Visual Studio](https://visualstudio.microsoft.com/vs/features/cplusplus/)
+
+ # Input/Output of Project
 
  > ## Phase II
  > In addition to completing the "Class Diagram" section below, you will need to:
