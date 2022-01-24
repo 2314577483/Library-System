@@ -8,28 +8,30 @@ Authors: \<[Zhenjie Liu](https://github.com/2314577483)\>
  ### General Description
  
 
- ### Why Is It Interesting to Us
+ ### Why Is It Interesting To Us
 
 
  ### Languages/Tools/Technologies 
  
    [C++](https://www.cplusplus.com/) - C++ 11 is the primary programming language for this project.
 
-   [Clion](https://www.jetbrains.com/clion/) - 
+   [Clion](https://www.jetbrains.com/clion/) - A high level C and C++ text editor.
    
    [CMake](https://cmake.org/) - 
 
    [Git](https://git-scm.com/) - 
 
-   [Git Hub](https://github.com)
+   [Git Hub](https://github.com) - 
   
-   [Google Test Framework](https://github.com/google/googletest)
+   [Google Test Framework](https://github.com/google/googletest) - 
 
-   [Vim](https://www.vim.org/)
+   [Vim](https://www.vim.org/) - A text ediotr on Linux.
+   
+   [Valgrind](https://valgrind.org/) - Valgrind is an instrumentation framework for building dynamic analysis tools. We will use it to check if there are any memeroy leak problems on our project.
 
-   [Visual Studio](https://visualstudio.microsoft.com/vs/features/cplusplus/)
+   [Visual Studio](https://visualstudio.microsoft.com/vs/features/cplusplus/) - A high level C and C++ text editor. This is the main text editor for this project.
 
- ### Input/Output of Project
+ ### Input/Output Of Project
 
  > ## Phase II
  > In addition to completing the "Class Diagram" section below, you will need to:
