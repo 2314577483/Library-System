@@ -2,17 +2,17 @@
 Authors: \[Zichao Xiao](https://github.com/Zichao031)\ 
 
 ## Project Description
- > Your project description should summarize the project you are proposing. Be sure to include:
- > * Why is it important or interesting to you?
-* We want to design a library system that allows users to register for accounts.
-Once logged in, the user can borrow books, show the date books needs to return, or show available books. Books are organized by different genres/sub-genres. The system allows to display all books or books under a selected genre or use combined criteria (for example, books by a particular author under a particular genre). Allows staff accounts to add/edit/delete books. Libraries can also provide users with book recommendations based on their previous reading history. This is a complete library software management system. We can improve productivity and efficiency by designing and implementing a software that not only facilitates students to borrow books, but also facilitates staff to manage books.
+* Why is it important or interesting to you?
+We want to design a library system that allows users to register for accounts.
+Once logged in, the user can borrow books, show the date books needs to return, or show available books. Books are organized by different genres/sub-genres. 
+The system allows to display all books or books under a selected genre or use combined criteria (for example, books by a particular author under a particular genre).
+Allows staff accounts to add/edit/delete books.
+Libraries can also provide users with book recommendations based on their previous reading history. 
+This is a complete library software management system. 
+We can improve productivity and efficiency by designing and implementing a software that not only facilitates students to borrow books, but also facilitates staff to manage books.
  > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
  >   * [toolname](link) - Short description
  > * What will be the input/output of your project? What are the features that the project provides?
- > 
- > This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
- > 
- > You also need to set up an empty project board by choosing the  “Automated kanban with review” option on Github. You should also have a Backlog and In testing columns added.
  > ## Phase II
  > In addition to completing the "Class Diagram" section below, you will need to:
  > * Create an "Epic" (note) for each feature and each design pattern and assign them to the appropriate team member. Place these in the `Backlog` column
