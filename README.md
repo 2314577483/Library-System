@@ -1,7 +1,7 @@
 # Library System
 
  
-Authors: \<[Zhenjie Liu](https://github.com/2314577483)\>
+Authors: [Zhenjie Liu](https://github.com/2314577483)
  
 
 ## Project Description
