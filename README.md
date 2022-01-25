@@ -1,6 +1,6 @@
 # Library System
 
-Authors: [Zhenjie Liu](https://github.com/2314577483), [Zichao Xiao](https://github.com/Zichao031), [William Feng](https://github.com/WwwwwFeng)
+Authors: [Zhenjie Liu](https://github.com/2314577483), [Zichao Xiao](https://github.com/Zichao031), [William Feng](https://github.com/WwwwwFeng), [Jiale Lin](https://github.com/jlin297)
 
 ## Project Description
 ### Why Is It Interesting To Us
