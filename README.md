@@ -1,8 +1,9 @@
 # Library System
-Authors: \[Zichao Xiao](https://github.com/Zichao031)\ 
+
+Authors: [Zhenjie Liu](https://github.com/2314577483), [Zichao Xiao](https://github.com/Zichao031)
 
 ## Project Description
-* Why is it important or interesting to you?
+### Why Is It Interesting To Us
 We want to design a library system that allows users to register for accounts.
 Once logged in, the user can borrow books, show the date books needs to return, or show available books. Books are organized by different genres/sub-genres. 
 The system allows to display all books or books under a selected genre or use combined criteria (for example, books by a particular author under a particular genre).
@@ -10,9 +11,33 @@ Allows staff accounts to add/edit/delete books.
 Libraries can also provide users with book recommendations based on their previous reading history. 
 This is a complete library software management system. 
 We can improve productivity and efficiency by designing and implementing a software that not only facilitates students to borrow books, but also facilitates staff to manage books.
- > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
- >   * [toolname](link) - Short description
- > * What will be the input/output of your project? What are the features that the project provides?
+
+
+### Languages/Tools/Technologies 
+ 
+   [C++](https://www.cplusplus.com/) - C++ 11 is the primary programming language for this project.
+
+   [Clion](https://www.jetbrains.com/clion/) - A high level C and C++ text editor.
+   
+   [CMake](https://cmake.org/) - An open-source, cross-platform family of tools designed to build, test and package software. 
+
+   [Git](https://git-scm.com/) - A distributed version control system that allow us to complete different commands.
+
+   [Git Hub](https://github.com) - A version control system that different partners can work the same project together online. It's the main version control system that we will use through the whole project.
+  
+   [Google Test Framework](https://github.com/google/googletest) - A tool where we can create our own test files and test if the code of this project works correctly.
+
+   [Vim](https://www.vim.org/) - A text editor on Linux.
+   
+   [Valgrind](https://valgrind.org/) - An instrumentation framework for building dynamic analysis tools. We will use it to check if there are any memeroy leak problems on our project.
+
+   [Visual Studio](https://visualstudio.microsoft.com/vs/features/cplusplus/) - A high level C and C++ text editor. This is the main text editor we will use for this project.
+
+### Input/Output Of Project
+   Input - We will require users to create their own library accounts when they first use the library system. After that, the information of acounts will be automatically saved on the server. When they next log in the system, we will compare the information entered to the database to match whether the account information was entered correctly. Other inputs will include the inforamtion of books like book name, authors name, ISBN number, cover, genre, availability, price, location. 
+   
+   Output - The system will automatically matched the information from the users input. If the book is available, the system will output the name, author name, ISBN number, cover, genre, price and location of the book to help users find it.
+
  > ## Phase II
  > In addition to completing the "Class Diagram" section below, you will need to:
  > * Create an "Epic" (note) for each feature and each design pattern and assign them to the appropriate team member. Place these in the `Backlog` column
