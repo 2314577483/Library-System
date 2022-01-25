@@ -1,14 +1,19 @@
 # Library System
 
- 
-Authors: [Zhenjie Liu](https://github.com/2314577483)
- 
+Authors: [Zhenjie Liu](https://github.com/2314577483), [Zichao Xiao](https://github.com/Zichao031)
 
 ## Project Description
- ### Why Is It Interesting To Us
+### Why Is It Interesting To Us
+We want to design a library system that allows users to register for accounts.
+Once logged in, the user can borrow books, show the date books needs to return, or show available books. Books are organized by different genres/sub-genres. 
+The system allows to display all books or books under a selected genre or use combined criteria (for example, books by a particular author under a particular genre).
+Allows staff accounts to add/edit/delete books.
+Libraries can also provide users with book recommendations based on their previous reading history. 
+This is a complete library software management system. 
+We can improve productivity and efficiency by designing and implementing a software that not only facilitates students to borrow books, but also facilitates staff to manage books.
 
 
- ### Languages/Tools/Technologies 
+### Languages/Tools/Technologies 
  
    [C++](https://www.cplusplus.com/) - C++ 11 is the primary programming language for this project.
 
@@ -28,11 +33,10 @@ Authors: [Zhenjie Liu](https://github.com/2314577483)
 
    [Visual Studio](https://visualstudio.microsoft.com/vs/features/cplusplus/) - A high level C and C++ text editor. This is the main text editor we will use for this project.
 
- ### Input/Output Of Project
+### Input/Output Of Project
    Input - We will require users to create their own library accounts when they first use the library system. After that, the information of acounts will be automatically saved on the server. When they next log in the system, we will compare the information entered to the database to match whether the account information was entered correctly. Other inputs will include the inforamtion of books like book name, authors name, ISBN number, cover, genre, availability, price, location. 
    
    Output - The system will automatically matched the information from the users input. If the book is available, the system will output the name, author name, ISBN number, cover, genre, price and location of the book to help users find it.
-
 
  > ## Phase II
  > In addition to completing the "Class Diagram" section below, you will need to:
