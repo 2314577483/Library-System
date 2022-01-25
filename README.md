@@ -1,6 +1,6 @@
 # Library System
 
-Authors: [Zhenjie Liu](https://github.com/2314577483), [Zichao Xiao](https://github.com/Zichao031)
+Authors: [Zhenjie Liu](https://github.com/2314577483), [Zichao Xiao](https://github.com/Zichao031), [William Feng](https://github.com/WwwwwFeng)
 
 ## Project Description
 ### Why Is It Interesting To Us
@@ -11,7 +11,6 @@ Allows staff accounts to add/edit/delete books.
 Libraries can also provide users with book recommendations based on their previous reading history. 
 This is a complete library software management system. 
 We can improve productivity and efficiency by designing and implementing a software that not only facilitates students to borrow books, but also facilitates staff to manage books.
-
 
 ### Languages/Tools/Technologies 
  
