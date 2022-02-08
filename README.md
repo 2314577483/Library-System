@@ -31,19 +31,10 @@ A library system is boring to be honest, but the sub-systems like data-storage s
    
    Output - The system will automatically matched the information from the users input. If the book is available, the system will output the name, author name, ISBN number, cover, genre, price and location of the book to help users find it.
 
- > ## Phase II
- > In addition to completing the "Class Diagram" section below, you will need to:
- > * Create an "Epic" (note) for each feature and each design pattern and assign them to the appropriate team member. Place these in the `Backlog` column
- > * Complete your first *sprint planning* meeting to plan out the next 7 days of work.
- >   * Create smaller actionable development tasks as issues and assign them to team members. Place these in the `TODO` column.
- >   * These cards should represent roughly 7 days worth of development time for your team, taking you until your first meeting with the TA
- > * Schedule two check-ins using Calendly. You need to pick both time slots during your lab on week 8. Your entire team must be present for both check-ins.
- >   * The first check-in needs to be scheduled with your lab TA. During that meeting, you will discuss your project design/class diagram from phase II.
- >   * The second check-in should be scheduled with a reader. During that meeting you will discuss:
- >     * The tasks you are planning for the first sprint
- >     * How work will be divided between the team members
-
+# Phase II
 ## Class Diagram
+  In our project, we first have one or more Shelves to build up the library. Each Shelf is made up of zero or more Items. The Item class will have three child classes: Article, Book, and Video. The Article, in other words, peer review, is a summary of the book. It can introduce the book to the user. The Book class contains all necessary parts of the book, like author, publisher, format, ISBN, etc. As a system, we must have a User class to determine what role the user is. The User class is inherited by three classes: isNewuser, isLibrarian, and isStudent. Each associated class will contain the account and password of the user, and it will determine the user type in order to give different users different authority. Besides the isStudent class, we create a child class called accountDebt to check if the student has enough money to borrow books.
+  
  > Include a **class diagram(s)** for your project and a **description** of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
  
  > ## Phase III
