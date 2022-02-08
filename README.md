@@ -33,7 +33,8 @@ A library system is boring to be honest, but the sub-systems like data-storage s
 
 # Phase II
 ## Class Diagram
-https://github.com/cs100/final-project-zliu308-jlin297-zxiao031-wfeng026/issues/5#issuecomment-1033143018
+![Diagram](https://user-images.githubusercontent.com/97133827/153089385-0720754e-fd14-4b2d-8c54-c30c64a11230.png)
+
   In our project, we first have one or more Shelves to build up the library. Each Shelf is made up of zero or more Items. The Item class will have three child classes: Article, Book, and Video. The Article, in other words, peer review, is a summary of the book. It can introduce the book to the user. The Book class contains all necessary parts of the book, like author, publisher, format, ISBN, etc. As a system, we must have a User class to determine what role the user is. The User class is inherited by three classes: isNewuser, isLibrarian, and isStudent. Each associated class will contain the account and password of the user, and it will determine the user type in order to give different users different authority. Besides the isStudent class, we create a child class called accountDebt to check if the student has enough money to borrow books.
   
  > ## Phase III
