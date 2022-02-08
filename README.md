@@ -4,16 +4,6 @@ Authors: [Zhenjie Liu](https://github.com/2314577483), [Zichao Xiao](https://git
 
 ## Project Description
 ### Why Is It Interesting To Us
-A library system is boring to be honest, but the sub-systems like data-storage system and data-search engine excited us. In today's era of big data, more or less everyone's information is collected, and the use of this information can give enterprises an advantage in expanding their influence. So the way to store and use big data is a hot trend nowadays. Before the use of big data is the storage and use of data, so mastering various methods of data processing is the cornerstone for us to stand on the top of the trend, and this is the reason why the topic intersting to us. By designing a library system, we can start to be exposed to the way of data processing. Searching, adding, and recommending books will allow us to become more and more familiar with how to handle data. This will make it easier for us to get started when we enter the company in the future.
-
-We want to design a library system that allows users to register for accounts.
-Once logged in, the user can borrow books, show the date books needs to return, or show available books. Books are organized by different genres/sub-genres. 
-The system allows to display all books or books under a selected genre or use combined criteria (for example, books by a particular author under a particular genre).
-Allows staff accounts to add/edit/delete books.
-Libraries can also provide users with book recommendations based on their previous reading history. 
-This is a complete library software management system. 
-We can improve productivity and efficiency by designing and implementing a software that not only facilitates students to borrow books, but also facilitates staff to manage books.
-
 ### Languages/Tools/Technologies 
  
    [C++](https://www.cplusplus.com/) - C++ 11 is the primary programming language for this project.
@@ -39,21 +29,12 @@ We can improve productivity and efficiency by designing and implementing a softw
    
    Output - The system will automatically matched the information from the users input. If the book is available, the system will output the name, author name, ISBN number, cover, genre, price and location of the book to help users find it.
 
- > ## Phase II
- > In addition to completing the "Class Diagram" section below, you will need to:
- > * Create an "Epic" (note) for each feature and each design pattern and assign them to the appropriate team member. Place these in the `Backlog` column
- > * Complete your first *sprint planning* meeting to plan out the next 7 days of work.
- >   * Create smaller actionable development tasks as issues and assign them to team members. Place these in the `TODO` column.
- >   * These cards should represent roughly 7 days worth of development time for your team, taking you until your first meeting with the TA
- > * Schedule two check-ins using Calendly. You need to pick both time slots during your lab on week 8. Your entire team must be present for both check-ins.
- >   * The first check-in needs to be scheduled with your lab TA. During that meeting, you will discuss your project design/class diagram from phase II.
- >   * The second check-in should be scheduled with a reader. During that meeting you will discuss:
- >     * The tasks you are planning for the first sprint
- >     * How work will be divided between the team members
-
+# Phase II
 ## Class Diagram
- > Include a **class diagram(s)** for your project and a **description** of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
- 
+![Diagram](https://user-images.githubusercontent.com/97133827/153089385-0720754e-fd14-4b2d-8c54-c30c64a11230.png)
+
+  In our project, we first have one or more Shelves to build up the library. Each Shelf is made up of zero or more Items. The Item class will have three child classes: Article, Book, and Video. The Article, in other words, peer review, is a summary of the book. It can introduce the book to the user. The Book class contains all necessary parts of the book, like author, publisher, format, ISBN, etc. As a system, we must have a User class to determine what role the user is. The User class is inherited by three classes: isNewuser, isLibrarian, and isStudent. Each associated class will contain the account and password of the user, and it will determine the user type in order to give different users different authority. Besides the isStudent class, we create a child class called accountDebt to check if the student has enough money to borrow books.
+  
  > ## Phase III
  > You will need to schedule a check-in for the second scrum meeting with a reader (using Calendly). Your entire team must be present. This meeting will occur on week 8 but NOT during lab time.
  > * Before the meeting you should perform a sprint plan like you did in Phase II.
