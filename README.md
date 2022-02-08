@@ -1,11 +1,9 @@
 # Library System
 
-Authors: [Zhenjie Liu](https://github.com/2314577483), [Zichao Xiao](https://github.com/Zichao031), [William Feng](https://github.com/WwwwwFeng)
+Authors: [Zhenjie Liu](https://github.com/2314577483), [Zichao Xiao](https://github.com/Zichao031), [William Feng](https://github.com/WwwwwFeng), [Jiale Lin](https://github.com/jlin297)
 
 ## Project Description
 ### Why Is It Interesting To Us
-A library system is boring to be honest, but the sub-systems like data-storage system and data-search engine excited us. In today's era of big data, more or less everyone's information is collected, and the use of this information can give enterprises an advantage in expanding their influence. So the way to store and use big data is a hot trend nowadays. Before the use of big data is the storage and use of data, so mastering various methods of data processing is the cornerstone for us to stand on the top of the trend, and this is the reason why the topic intersting to us. By designing a library system, we can start to be exposed to the way of data processing. Searching, adding, and recommending books will allow us to become more and more familiar with how to handle data. This will make it easier for us to get started when we enter the company in the future.
-
 ### Languages/Tools/Technologies 
  
    [C++](https://www.cplusplus.com/) - C++ 11 is the primary programming language for this project.
