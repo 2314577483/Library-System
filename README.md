@@ -4,6 +4,7 @@ Authors: [Zhenjie Liu](https://github.com/2314577483), [Zichao Xiao](https://git
 
 ## Project Description
 ### Why Is It Interesting To Us
+We want to design a library system that allows users to register for accounts. Once logged in, the user can borrow books, show the date books needs to return, or show available books. Books are organized by different genres/sub-genres. The system allows to display all books or books under a selected genre or use combined criteria (for example, books by a particular author under a particular genre). Allows staff accounts to add/edit/delete books. Libraries can also provide users with book recommendations based on their previous reading history. This is a complete library software management system. We can improve productivity and efficiency by designing and implementing a software that not only facilitates students to borrow books, but also facilitates staff to manage books.
 ### Languages/Tools/Technologies 
  
    [C++](https://www.cplusplus.com/) - C++ 11 is the primary programming language for this project.
