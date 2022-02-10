@@ -4,7 +4,15 @@ Authors: [Zhenjie Liu](https://github.com/2314577483), [Zichao Xiao](https://git
 
 ## Project Description
 ### Why Is It Interesting To Us
-We want to design a library system that allows users to register for accounts. Once logged in, the user can borrow books, show the date books needs to return, or show available books. Books are organized by different genres/sub-genres. The system allows to display all books or books under a selected genre or use combined criteria (for example, books by a particular author under a particular genre). Allows staff accounts to add/edit/delete books. Libraries can also provide users with book recommendations based on their previous reading history. This is a complete library software management system. We can improve productivity and efficiency by designing and implementing a software that not only facilitates students to borrow books, but also facilitates staff to manage books.
+A library system is boring to be honest, but the sub-systems like data-storage system and data-search engine excited us. In today's era of big data, more or less everyone's information is collected, and the use of this information can give enterprises an advantage in expanding their influence. So the way to store and use big data is a hot trend nowadays. Before the use of big data is the storage and use of data, so mastering various methods of data processing is the cornerstone for us to stand on the top of the trend, and this is the reason why the topic intersting to us. By designing a library system, we can start to be exposed to the way of data processing. Searching, adding, and recommending books will allow us to become more and more familiar with how to handle data. This will make it easier for us to get started when we enter the company in the future.
+
+We want to design a library system that allows users to register for accounts.
+Once logged in, the user can borrow books, show the date books needs to return, or show available books. Books are organized by different genres/sub-genres. 
+The system allows to display all books or books under a selected genre or use combined criteria (for example, books by a particular author under a particular genre).
+Allows staff accounts to add/edit/delete books.
+Libraries can also provide users with book recommendations based on their previous reading history. 
+This is a complete library software management system. 
+We can improve productivity and efficiency by designing and implementing a software that not only facilitates students to borrow books, but also facilitates staff to manage books.
 ### Languages/Tools/Technologies 
  
    [C++](https://www.cplusplus.com/) - C++ 11 is the primary programming language for this project.
