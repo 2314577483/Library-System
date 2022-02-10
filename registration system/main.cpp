@@ -1,8 +1,5 @@
 #include "Newuser.h"
 
-
-
-
 int main() {
 
 	Newuser newuser;

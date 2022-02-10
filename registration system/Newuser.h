@@ -4,10 +4,12 @@
 #include <fstream>
 #include <iostream>
 #include <string>
+#include <vector>
+
+#define USERNAME_FILE "username.txt"
+#define PASSWORD_FILE "password.txt"
 
 using namespace std;
-
-Newuser user[100];	// the maximum of users
 
 
 class Newuser {
@@ -16,13 +18,13 @@ private:
 	string password;
 	string email;
 	string studentName;
-	int scount = 0;		// saved number of users
 public:
-	void openFile();
+	void saveFile();
 	void checkFile();
 	void registration();
 	//bool isRegistered();
 };
 
+//Newuser user[100];
 
 #endif
