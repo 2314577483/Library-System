@@ -1,57 +1,100 @@
-#include "Newuser.h"
+#include <fstream>
+#include <iostream>
+#include <string>
+#include <sstream>
+//#include <vector>
 
-void Newuser::openFile() {
-	ofstream outFile;
-	outFile.open("record.txt", ios::out);
+#define RECORD_FILE "record.txt"
+//#define PASSWORD_FILE "password.txt"
 
+using namespace std;
 
-	for (int i = 0; i < scount; i++) {
-		outFile << user[i].NetID << user[i].password << endl;
-	}
+class Newuser {
+public:
+	Newuser() {};
+	//void saveFile();
+	//void checkFile();
+	void registration();
+	//bool isRegistered();
 
-	outFile.close();
-}
-
-void Newuser::checkFile() {
-	ifstream inFile;
-	inFile.open("record.txt", ios::in);
-
-	int scount = 0;
-
-	for (int i = 0; !inFile.eof(); i++) {
-		inFile >> user[i].NetID;
-		inFile >> user[i].password;
-		scount++;
-	}
-	scount--;
-	inFile.close();
-}
+private:
+	string NetID;
+	string password;
+	string studentName;
+	string email;
+};
 
 void Newuser::registration() {
-	string pw1;
-	string pw2;
+
+	ifstream indataFile(RECORD_FILE, ios::in);
+	ofstream outdataFile(RECORD_FILE, ios::app);
+
+	string tempNetID;
+	string tempPassword;
 
 	cout << "Please enter the NetID: ";
-	cin >> NetID;
-	cout << "Please enter the password: ";
-	cin >> pw1;
-	cout << "Please enter the password again: ";
-	cin >> pw2;
+	cin >> tempNetID;
+	if (indataFile.is_open()) {
+		// verify if the input from user is exist
+		while (getline(indataFile, NetID)) {
+			if (NetID.find(tempNetID, 0) != string::npos) {
+				cout << "This account is already regitered, please try anohter one!" << endl;
+				cin.ignore();
+				registration();
+			}
+			else {
+				NetID = tempNetID;
+				outdataFile << "NetID: " << NetID;
+			}
+			indataFile.close();
+		}
+	}
+	cin.ignore();
 
-	if (pw1 != pw2) {
+	cout << "Please enter your full name: ";
+	getline(cin, studentName);
+	outdataFile << ", Name: " << studentName;
+
+	//cout << "Please enter your UCR email address: ";
+	//cin >> email;
+	//outdataFile << ", email: " << email;
+
+	cout << "Please set your password: ";
+	cin >> password;
+	cout << "Please confirm your password: ";
+	cin >> tempPassword;
+
+	if (tempPassword != password) {
 		cout << "Two input password must be consistent!" << endl;
-		cout << "Please enter the password again: ";
-		cin >> pw2;
+		cout << "Please confirm your password again: ";
+		cin >> tempPassword;
+	}
+	else {
+		outdataFile << ", Password: " << password << endl;
+		cout << "Successfully Registered!" << endl;
 	}
 
-	openFile();
-
+	outdataFile.close();
 }
 
+int main() {
 
+	Newuser u;
 
-//bool Newuser::isRegistered() {
-//
-//{
+	// check if there is a record.txt exists
+	// False -> create new record.txt file
+	ifstream indataFile(RECORD_FILE);
+	if (!indataFile) {
+		ofstream outdataFile(RECORD_FILE, ios::out);
+		outdataFile << "NetID: , Name: , Password:" << endl;
+		outdataFile.close();
+	}
 
+	cout << "************************************************************************************************" << endl;
+	cout << "\t\t\t\tWelcome to registratin system!" << endl;
+	cout << "************************************************************************************************" << endl;
 
+	u.registration();
+
+	return 0;
+}
