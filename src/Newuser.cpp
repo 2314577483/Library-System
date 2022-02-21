@@ -1,28 +1,29 @@
-#include <fstream>
-#include <iostream>
-#include <string>
-#include <sstream>
-//#include <vector>
+#include "Newuser.h"
 
-#define RECORD_FILE "record.txt"
-//#define PASSWORD_FILE "password.txt"
+using namespace us;
 
-using namespace std;
+Newuser::Newuser() {
+	NetID = "";
+	password = "";
+	email = "";
+	studentName = "";
+	userList.clear();
+}
 
-class Newuser {
-public:
-	Newuser() {};
-	//void saveFile();
-	//void checkFile();
-	void registration();
-	//bool isRegistered();
+void Newuser::insertInfo() {
+	userList.push_back();
+}
 
-private:
-	string NetID;
-	string password;
-	string studentName;
-	string email;
-};
+bool Newuser::isRegistered(NetID) {
+	for (auto it = userList.begin(); it != userlist.end(); ++it) {
+		if (*it == NetID) {
+			return True;
+		}
+		else
+			return False;
+	}
+}
+
 
 void Newuser::registration() {
 
@@ -64,6 +65,7 @@ void Newuser::registration() {
 	cout << "Please confirm your password: ";
 	cin >> tempPassword;
 
+	// Match two input if they are equal. if not, require to input again. Otherwise, save password to the record.txt
 	if (tempPassword != password) {
 		cout << "Two input password must be consistent!" << endl;
 		cout << "Please confirm your password again: ";
@@ -77,24 +79,5 @@ void Newuser::registration() {
 	outdataFile.close();
 }
 
-int main() {
 
-	Newuser u;
 
-	// check if there is a record.txt exists
-	// False -> create new record.txt file
-	ifstream indataFile(RECORD_FILE);
-	if (!indataFile) {
-		ofstream outdataFile(RECORD_FILE, ios::out);
-		outdataFile << "NetID: , Name: , Password:" << endl;
-		outdataFile.close();
-	}
-
-	cout << "************************************************************************************************" << endl;
-	cout << "\t\t\t\tWelcome to registratin system!" << endl;
-	cout << "************************************************************************************************" << endl;
-
-	u.registration();
-
-	return 0;
-}
