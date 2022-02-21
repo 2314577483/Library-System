@@ -24,10 +24,11 @@ private:
 	string email;
 };
 
-void Newuser::registration() {
+void Newuser::checkFile() {
+	ifstream inFile;
+	inFile.open("record.txt", ios::in);
 
-	ifstream indataFile(RECORD_FILE, ios::in);
-	ofstream outdataFile(RECORD_FILE, ios::app);
+	int scount = 0;
 
 	string tempNetID;
 	string tempPassword;
@@ -74,21 +75,14 @@ void Newuser::registration() {
 		cout << "Successfully Registered!" << endl;
 	}
 
-	outdataFile.close();
+	openFile();
+
 }
 
 int main() {
 
 	Newuser u;
 
-	// check if there is a record.txt exists
-	// False -> create new record.txt file
-	ifstream indataFile(RECORD_FILE);
-	if (!indataFile) {
-		ofstream outdataFile(RECORD_FILE, ios::out);
-		outdataFile << "NetID: , Name: , Password:" << endl;
-		outdataFile.close();
-	}
 
 	cout << "************************************************************************************************" << endl;
 	cout << "\t\t\t\tWelcome to registratin system!" << endl;
@@ -96,5 +90,3 @@ int main() {
 
 	u.registration();
 
-	return 0;
-}
