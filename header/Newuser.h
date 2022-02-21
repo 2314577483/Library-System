@@ -1,22 +1,33 @@
 #ifndef __NEWUSER_H__
 #define __NEWUSER_H__
 
-#include "User.h"
 
-namespace us {
-	class Newuser : public User {
-	private:
-		std::string NetID;
-		std::string password;
-		std::string studentName;
-		std::string email;
-		std::vector<User*> userList;
+#include <fstream>
+#include <iostream>
+#include <string>
+#include <vector>
 
-	public:
-		Newuser();
-		void insertInfo();
-		bool isRegistered(NetID);
 
-	};
-}
+#define RECORD_FILE "record.txt"
+
+using namespace std;
+
+class Newuser {
+private:
+	std::string NetID;
+	std::string password;
+	std::string studentName;
+	std::string email;
+	std::vector<Newuser*> userList;
+
+public:
+	Newuser();
+	void insertInfo(Newuser* item);
+	bool isRegistered(Newuser* NetID);
+	void saveFile();
+	void registration();
+
+
+};
+
 #endif
