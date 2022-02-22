@@ -1,12 +1,10 @@
 #ifndef __NEWUSER_H__
 #define __NEWUSER_H__
 
-
 #include <fstream>
 #include <iostream>
 #include <string>
 #include <vector>
-
 
 #define RECORD_FILE "record.txt"
 
@@ -18,16 +16,17 @@ private:
 	std::string password;
 	std::string studentName;
 	std::string email;
-	std::vector<Newuser*> userList;
+	std::vector<std::string> users;
+
 
 public:
 	Newuser();
-	void insertInfo(Newuser* item);
-	bool isRegistered(Newuser* NetID);
+	bool isRegistered(string line, string NetID);
+	//void insertList(const std::string data);
+	void insertInfo(const std::string data);
+	void clear();
+	void printList();
 	void saveFile();
-	void registration();
-
-
 };
 
 #endif
