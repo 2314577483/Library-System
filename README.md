@@ -46,22 +46,9 @@ We can improve productivity and efficiency by designing and implementing a softw
   
 # Phase III
 ![Blank diagram](https://user-images.githubusercontent.com/49822431/155460407-67db1814-ca77-4c1b-98a0-7edbc50fb8f3.png)
- > You will need to schedule a check-in for the second scrum meeting with a reader (using Calendly). Your entire team must be present. This meeting will occur on week 8 but NOT during lab time.
- > * Before the meeting you should perform a sprint plan like you did in Phase II.
- > * You should also update this README file by adding the following:
- >   * What design pattern(s) did you use? For each pattern you must explain in 4-5 sentences:
- >     * Why did you pick this pattern? And what feature did you implement with it?
- >     * How did the design pattern help you write better code?
- >   * An updated class diagram that reflects the design pattern(s) you used. You may combine multiple design patterns into one diagram if you'd like, but it needs to be clear which portion of the diagram represents which design pattern (either in the diagram or in the description).
- >   * Make sure your README file (and Project board) are up-to-date reflecting the current status of your project. Previous versions of the README file should still be visible through your commit history.
-> 
-> During the meeting with your reader you will discuss: 
- > * How effective your last sprint was (each member should talk about what they did)
- > * Any tasks that did not get completed last sprint, and how you took them into consideration for this sprint
- > * Any bugs you've identified and created issues for during the sprint. Do you plan on fixing them in the next sprint or are they lower priority?
- > * What tasks you are planning for this next sprint.
 
- 
+  In our project, we will use Composite Pattern as the main pattern. Maybe we will add some Strategy Pattern features in the future. The Composite Pattern can easily build up the structure of our classes, it can let us know what kind of class we need for our project. In the new UML diagram we have LibraryItem and LibraryUser as Component, User and Item as Composite, the other derived class are leaves. The Composite Pattern can help us on setting up the default behavior. It will be really easy for us to build the project at the beginning.
+
  > ## Final deliverable
  > All group members will give a demo to the TA/reader during lab time. The TA/reader will check the demo and the project GitHub repository and ask a few questions to all the team members. 
  > Before the demo, you should do the following:
