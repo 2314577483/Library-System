@@ -6,7 +6,7 @@ name: NewuserTest
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ master, zliu308/registration_system]
+    branches: [ master, zliu308/test]
   pull_request:
     branches: [ master ]
 
