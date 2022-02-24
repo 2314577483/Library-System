@@ -45,7 +45,7 @@ We can improve productivity and efficiency by designing and implementing a softw
   In our project, we first have one or more Shelves to build up the library. Each Shelf is made up of zero or more Items. The Item class will have three child classes: Article, Book, and Video. The Article, in other words, peer review, is a summary of the book. It can introduce the book to the user. The Book class contains all necessary parts of the book, like author, publisher, format, ISBN, etc. As a system, we must have a User class to determine what role the user is. The User class is inherited by three classes: Newuser, Librarian, and Student. Each associated class will contain the account and password of the user, and it will determine the user type in order to give different users different authority. Besides the Student class, we create a child class called accountDebt to check if the student has enough money to borrow books.
   
 # Phase III
-![Blank diagram](https://user-images.githubusercontent.com/97133827/155295293-21864dd3-6dbc-4470-a140-0d9e4d7f594c.png)
+![Blank diagram](https://user-images.githubusercontent.com/49822431/155460407-67db1814-ca77-4c1b-98a0-7edbc50fb8f3.png)
  > You will need to schedule a check-in for the second scrum meeting with a reader (using Calendly). Your entire team must be present. This meeting will occur on week 8 but NOT during lab time.
  > * Before the meeting you should perform a sprint plan like you did in Phase II.
  > * You should also update this README file by adding the following:
