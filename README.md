@@ -49,6 +49,10 @@ We can improve productivity and efficiency by designing and implementing a softw
 
   In our project, we will use Composite Pattern as the main pattern. Maybe we will add some Strategy Pattern features in the future. The Composite Pattern can easily build up the structure of our classes, it can let us know what kind of class we need for our project. In the new UML diagram we have LibraryItem and LibraryUser as Component, User and Item as Composite, the other derived class are leaves. The Composite Pattern can help us on setting up the default behavior. It will be really easy for us to build the project at the beginning.
 
+  The reason we use Composite Pattern is that "book", "article", and "video" are "leaves", and we can add the "category (shelf) "as the composite, so that we can store the "book"," article ","video"in the "category (shelf)". Meanwhile, we can also save "book", "article", and "video" into this "libraryItem".
+The "libraryItem" is used as a component, because we can store "book", "article", and "video" into "libraryItem", and then we can store  "category (shelf)" into "libraryItem", which will constitute our Composite Pattern. We are using this design pattern to improve efficiency and help us write code better and clearer.
+
+
  > ## Final deliverable
  > All group members will give a demo to the TA/reader during lab time. The TA/reader will check the demo and the project GitHub repository and ask a few questions to all the team members. 
  > Before the demo, you should do the following:
