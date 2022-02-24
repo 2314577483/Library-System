@@ -21,12 +21,12 @@ private:
 
 public:
 	Newuser();
-	bool isRegistered(string line, string NetID);
-	//void insertList(const std::string data);
-	void insertInfo(const std::string data);
-	void clear();
-	void printList();
+	void insertInfo(Newuser* item);
+	bool isRegistered(Newuser* NetID);
 	void saveFile();
+	void registration();
+
+
 };
 
 #endif
