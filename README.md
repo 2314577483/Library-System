@@ -98,6 +98,7 @@ We can improve productivity and efficiency by designing and implementing a softw
 
  
  ## Installation/Usage
+ ![Final Project UML](https://user-images.githubusercontent.com/97133827/157556499-0d831a8c-ca3d-43ba-88b4-6b2393fc0107.png)
  > Instructions on installing and running your application
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
