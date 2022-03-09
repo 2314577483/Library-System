@@ -1,4 +1,4 @@
-#include "..\header\User.h"
+#include "../header/User.h"
 
 User::User() {
 	userType = 0;

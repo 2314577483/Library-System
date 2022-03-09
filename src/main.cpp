@@ -1,8 +1,9 @@
-#include "..\header\Newuser.h"
-#include "..\header\User.h"
-#include "..\header\Student.h"
-#include "..\header\Librarian.h"
-#include "windows.h"
+#include "../header/Newuser.h"
+#include "../header/User.h"
+#include "../header/Student.h"
+#include "../header/Librarian.h"
+//#include "windows.h"
+
 
 #include <chrono>
 #include <thread>
@@ -158,18 +159,18 @@ void LibraianLoginMenu() {
 	getline(cin, tempNetID);
 
 	while (tempNetID.find("001") == std::string::npos) {
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
+		//SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
 		cout << "\t\tPlease enter a valid libraian account: ";
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED |
-			FOREGROUND_GREEN | FOREGROUND_BLUE);
+		//SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED |
+		//	FOREGROUND_GREEN | FOREGROUND_BLUE);
 		getline(cin, tempNetID);
 	}
 
 	while (user4.isNetIDExisted(tempNetID) != 1) {
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
+		//SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
 		cout << "\t\tAccount is not existed! Please try again: ";
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED |
-			FOREGROUND_GREEN | FOREGROUND_BLUE);
+		//SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED |
+		//	FOREGROUND_GREEN | FOREGROUND_BLUE);
 		cin.ignore();
 		getline(cin, tempNetID);
 	}
@@ -177,10 +178,10 @@ void LibraianLoginMenu() {
 	cout << "\n\t\tPlease enter the password: ";
 	getline(cin, oldPassword);
 	while (user4.isPasswordMatched(tempNetID, oldPassword) != 1) {
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
+		//SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
 		cout << "\n\t\tThe password is incorrect! Please try again: ";
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED |
-			FOREGROUND_GREEN | FOREGROUND_BLUE);
+		//SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED |
+		//	FOREGROUND_GREEN | FOREGROUND_BLUE);
 		getline(cin, oldPassword);
 	}
 
@@ -202,19 +203,19 @@ void LibraianLoginMenu() {
 			std::cin >> rAccount;
 
 			while (user4.isNetIDExisted(tempNetID) != 1) {
-				SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
+				//SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
 				cout << "\n\t\tAccount is not existed! Please try again: ";
 				cin.ignore();
-				SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED |
-					FOREGROUND_GREEN | FOREGROUND_BLUE);
+				//SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED |
+				//	FOREGROUND_GREEN | FOREGROUND_BLUE);
 				getline(cin, tempNetID);
 			}
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
+			//SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
 			cout << "\n\t\tAttention: Account removal is an irreversible process!";
 			cout << "\n\t\tAre you sure to remove this account? (Y/N): ";
 
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED |
-				FOREGROUND_GREEN | FOREGROUND_BLUE);
+			//SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED |
+			//	FOREGROUND_GREEN | FOREGROUND_BLUE);
 
 			cin >> key;
 			if (key == "Y" || key == "y") {
@@ -309,11 +310,11 @@ void StudentLoginMenu() {
 	cin.ignore();
 	getline(cin, tempNetID);
 	while (user2.isNetIDExisted(tempNetID) != 1) {
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
+		//SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
 		cout << "\n\t\tAccount is not existed! Please try again: ";
 		cin.ignore();
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED |
-			FOREGROUND_GREEN | FOREGROUND_BLUE);
+		//SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED |
+		//	FOREGROUND_GREEN | FOREGROUND_BLUE);
 		getline(cin, tempNetID);
 	}
 
@@ -426,8 +427,8 @@ void StudentLoginMenu() {
 }
 
 void RegisterFunction() {
-	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED |
-		FOREGROUND_GREEN | FOREGROUND_BLUE);
+	//SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED |
+	//	FOREGROUND_GREEN | FOREGROUND_BLUE);
 
 	Newuser user1;
 
@@ -442,13 +443,13 @@ void RegisterFunction() {
 
 	
 	if (tempNetID.size() < 7) {
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
+		//SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
 		cout << "\n\t\tInvalid NetID! Please try another one";
 
 		return RegisterFunction();
 	}
 	else if (user1.isRegistered(tempNetID) == 1) {
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
+		//SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
 		cout << "\n\t\tThis account is registered! Please try another one!";
 
 		return RegisterFunction();
@@ -458,11 +459,11 @@ void RegisterFunction() {
 	cout << "\n\t\tPlease enter the email address: ";
 	cin >> tempEmail;
 	while (tempEmail.find("@") == std::string::npos) {
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
+		//SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
 		cout << "\n\t\tInvalid email address! Please try another one";
 		cin.ignore();
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED |
-			FOREGROUND_GREEN | FOREGROUND_BLUE);
+		//SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED |
+		//	FOREGROUND_GREEN | FOREGROUND_BLUE);
 		cin >> tempEmail;
 	}
 
@@ -474,11 +475,11 @@ void RegisterFunction() {
 	cin >> tempPassword2;
 
 	while (tempPassword2 != tempPassword) {
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
+		//SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
 		cout << "\n\t\tTwo input password must be consistent!";
 		// set console output color
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED |
-			FOREGROUND_GREEN | FOREGROUND_BLUE);
+		//SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED |
+		//	FOREGROUND_GREEN | FOREGROUND_BLUE);
 		cout << "\n\t\tPlease confirm the paswword again: ";
 		cin >> tempPassword2;
 	}
@@ -517,8 +518,8 @@ void WelcomeDisplayMenu() {
 }
 
 int main() {
-	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED |
-		FOREGROUND_GREEN | FOREGROUND_BLUE);
+	//SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED |
+	//	FOREGROUND_GREEN | FOREGROUND_BLUE);
 
 	User user3;
 	int choice;
@@ -569,11 +570,11 @@ int main() {
 			cout << "\t\t***************************************************\n";
 			break;
 		default:
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
+			//SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
 			cout << "\t\tPlease enter a valid key! \n";
 
-			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED |
-				FOREGROUND_GREEN | FOREGROUND_BLUE);
+			//SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED |
+			//	FOREGROUND_GREEN | FOREGROUND_BLUE);
 		}
 	} while (choice != 0);
 

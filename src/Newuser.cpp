@@ -1,4 +1,4 @@
-#include "..\header\Newuser.h"
+#include "../header/Newuser.h"
 
 Newuser::Newuser() {
 	NetID = "";

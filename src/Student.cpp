@@ -1,8 +1,8 @@
-#include "..\header\Student.h"
-#include "..\header\LibraryItem.h"
-#include "..\header\Item.h"
-#include "..\header\Shelf.h"
-#include "..\header\AllSearches.h"
+#include "../header/Student.h"
+#include "../header/LibraryItem.h"
+#include "../header/Item.h"
+#include "../header/Shelf.h"
+#include "../header/AllSearches.h"
 #include <iostream>
 #include <fstream>
 
