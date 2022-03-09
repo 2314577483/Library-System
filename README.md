@@ -60,7 +60,8 @@ We can improve productivity and efficiency by designing and implementing a softw
  > * Make sure your README file and Project board are up-to-date reflecting the current status of your project (e.g. any changes that you have made during the project such as changes to your class diagram). Previous versions should still be visible through your commit history. 
  
  ## Screenshots
- > Screenshots of the input/output after running your application
+ Welcome Mneu
+ https://github.com/cs100/final-project-zliu308-jlin297-zxiao031-wfeng026/blob/zliu308/screentshot/Screenshots/WelcomeMenu.png?raw=true
  ## Installation/Usage
  > Instructions on installing and running your application
  ## Testing
