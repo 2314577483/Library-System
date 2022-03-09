@@ -45,7 +45,7 @@ We can improve productivity and efficiency by designing and implementing a softw
   In our project, we first have one or more Shelves to build up the library. Each Shelf is made up of zero or more Items. The Item class will have three child classes: Article, Book, and Video. The Article, in other words, peer review, is a summary of the book. It can introduce the book to the user. The Book class contains all necessary parts of the book, like author, publisher, format, ISBN, etc. As a system, we must have a User class to determine what role the user is. The User class is inherited by three classes: Newuser, Librarian, and Student. Each associated class will contain the account and password of the user, and it will determine the user type in order to give different users different authority. Besides the Student class, we create a child class called accountDebt to check if the student has enough money to borrow books.
   
 # Phase III
-![Blank diagram](https://user-images.githubusercontent.com/49822431/155460407-67db1814-ca77-4c1b-98a0-7edbc50fb8f3.png)
+![image](https://user-images.githubusercontent.com/49822431/157553687-a2c8666d-6b6b-4ad9-9b5c-eed5071a2fd2.png)
 
   In our project, we will use Composite Pattern as the main pattern. Maybe we will add some Strategy Pattern features in the future. The Composite Pattern can easily build up the structure of our classes, it can let us know what kind of class we need for our project. In the new UML diagram we have LibraryItem and LibraryUser as Component, User and Item as Composite, the other derived class are leaves. The Composite Pattern can help us on setting up the default behavior. It will be really easy for us to build the project at the beginning.
 
@@ -60,7 +60,43 @@ We can improve productivity and efficiency by designing and implementing a softw
  > * Make sure your README file and Project board are up-to-date reflecting the current status of your project (e.g. any changes that you have made during the project such as changes to your class diagram). Previous versions should still be visible through your commit history. 
  
  ## Screenshots
- > Screenshots of the input/output after running your application
+ Welcome Mneu
+ 
+ ![image](https://user-images.githubusercontent.com/49822431/157552734-020af8c2-9b20-4c29-b2f7-22fcb574bb4f.png)
+
+ Register Menu
+ 
+ ![image](https://user-images.githubusercontent.com/49822431/157552943-2ff3866b-fcb3-437a-a070-bd5d2ce41efc.png)
+
+ Libraian Function Menu
+ 
+ ![image](https://user-images.githubusercontent.com/49822431/157553010-ed08df8f-f459-45ec-ad95-c5c43fb7b338.png)
+ 
+ Libraian Add Function Menu
+ 
+ ![image](https://user-images.githubusercontent.com/49822431/157553484-f794bd69-0ace-40af-aba8-fdced4ffed44.png)
+ 
+ Libraian Add Book Process
+ 
+ ![image](https://user-images.githubusercontent.com/49822431/157553060-2e38286b-f97e-43be-9930-d8cab24bf650.png)
+
+ Libraian Add Article Process
+ 
+ ![image](https://user-images.githubusercontent.com/49822431/157553437-4724531c-ef64-44e3-a46d-f4ea208a4c07.png)
+ 
+ Libraian Add Video Process
+ 
+ ![image](https://user-images.githubusercontent.com/49822431/157553531-380b299a-9061-4a89-9b9b-cbb14486c135.png)
+
+ Student Function Menu
+ 
+ ![image](https://user-images.githubusercontent.com/49822431/157552784-b6bdda68-6481-4992-b88a-89614663710a.png)
+ 
+ Student Search Menu
+ 
+ ![image](https://user-images.githubusercontent.com/49822431/157552879-e63fa09c-d78d-47f9-989a-0888c548165b.png)
+
+ 
  ## Installation/Usage
  > Instructions on installing and running your application
  ## Testing
