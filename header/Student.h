@@ -29,11 +29,7 @@ public:
 	void borrowItem(string NetID);
 	void returnItem(string NetID);
 
-	void searchName();
-	void searchYear();
-	void searchAuthor();
-	void searchTag();
-	void searchIdentifier();
+	void search(int searchChoice);
 
 	void addDebt(string NetID, int amount);
 	void showDebt(string NetID);
