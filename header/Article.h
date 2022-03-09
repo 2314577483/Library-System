@@ -6,7 +6,7 @@
 #define INC_100_PROJECT_ARTICLE_H
 
 
-#include "../header/Item.h"
+#include "Item.h"
 
 
 class Article: public Item{

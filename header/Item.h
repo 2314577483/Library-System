@@ -5,7 +5,7 @@
 #ifndef FINAL_PROJECT_ZLIU308_JLIN297_ZXIAO031_WFENG026_ITEM_H
 #define FINAL_PROJECT_ZLIU308_JLIN297_ZXIAO031_WFENG026_ITEM_H
 
-#include "..\header\Shelf.h"
+#include "Shelf.h"
 
 
 class Item :public LibraryItem{

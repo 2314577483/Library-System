@@ -5,7 +5,7 @@
 #ifndef INC_100_PROJECT_BOOK_H
 #define INC_100_PROJECT_BOOK_H
 
-#include "../header/Item.h"
+#include "Item.h"
 
 
 class Book: public Item{

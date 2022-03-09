@@ -5,7 +5,7 @@
 #ifndef FINAL_PROJECT_ZLIU308_JLIN297_ZXIAO031_WFENG026_SHELF_H
 #define FINAL_PROJECT_ZLIU308_JLIN297_ZXIAO031_WFENG026_SHELF_H
 
-#include "..\header\LibraryItem.h"
+#include "LibraryItem.h"
 
 
 

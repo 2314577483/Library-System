@@ -5,7 +5,7 @@
 #ifndef INC_100_PROJECT_VIDEO_H
 #define INC_100_PROJECT_VIDEO_H
 
-#include "../header/Item.h"
+#include "Item.h"
 
 class Video: public Item{
 private:
