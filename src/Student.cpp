@@ -221,35 +221,76 @@ void Student::search(int searchChoice) {
 	// set search category -- sample given using Year
 
 	switch (searchChoice) {
-	case 1:
-		shelf1->setSearch(new SearchByName<LibraryItem>());
-		break;
-	case 2:
-		shelf1->setSearch(new SearchByYear<LibraryItem>());
-		break;
-	case 3:
-		shelf1->setSearch(new SearchByAuthor<LibraryItem>());
-		break;
-	case 4:
-		shelf1->setSearch(new SearchByTag<LibraryItem>());
-		break;
-	case 5:
-		shelf1->setSearch(new SearchByIdentifier<LibraryItem>());
-		break;
+	case 1: {
+
+		SearchByName<LibraryItem>* tmp = new SearchByName<LibraryItem>();
+		shelf1->setSearch(tmp);
+		string tmpString;
+		cout << "\n\t\tEnter the content: ";
+		cin.ignore();
+		getline(cin, tmpString);
+		searchResult = shelf1->search(tmpString, searchResult);
+
+		for (auto& i : searchResult) std::cout << "\n\t\t" << i->getName() << std::endl;
+		delete tmp;
+		break; }
+	case 2: {
+		SearchByYear<LibraryItem>* tmp = new SearchByYear<LibraryItem>();
+		shelf1->setSearch(tmp);
+		string tmpString;
+		cout << "\n\t\tEnter the content: ";
+		cin.ignore();
+		getline(cin, tmpString);
+		searchResult = shelf1->search(tmpString, searchResult);
+
+		for (auto& i : searchResult) std::cout << "\n\t\t" << i->getName() << std::endl;
+		delete tmp;
+		break; }
+	case 3: {
+		SearchByAuthor<LibraryItem>* tmp = new SearchByAuthor<LibraryItem>();
+		shelf1->setSearch(tmp);
+		string tmpString;
+		cout << "\n\t\tEnter the content: ";
+		cin.ignore();
+		getline(cin, tmpString);
+		searchResult = shelf1->search(tmpString, searchResult);
+
+		for (auto& i : searchResult) std::cout << "\n\t\t" << i->getName() << std::endl;
+		delete tmp;
+		break; }
+	case 4: {
+		SearchByTag<LibraryItem>* tmp = new SearchByTag<LibraryItem>();
+		shelf1->setSearch(tmp);
+		string tmpString;
+		cout << "\n\t\tEnter the content: ";
+		cin.ignore();
+		getline(cin, tmpString);
+		searchResult = shelf1->search(tmpString, searchResult);
+
+		for (auto& i : searchResult) std::cout << "\n\t\t" << i->getName() << std::endl;
+		delete tmp;
+		break; }
+	case 5:{
+		SearchByIdentifier<LibraryItem> * tmp = new SearchByIdentifier<LibraryItem>();
+		shelf1->setSearch(tmp);
+		string tmpString;
+		cout << "\n\t\tEnter the content: ";
+		cin.ignore();
+		getline(cin, tmpString);
+		searchResult = shelf1->search(tmpString, searchResult);
+
+		for (auto& i : searchResult) std::cout << "\n\t\t" << i->getName() << std::endl;
+		delete tmp;
+		break;}
 	default:
 		cout << "\n\t\tWrong Option!" << endl;
 		break;
 	}
 
 	// get search result
-	string tmpString;
-	cout << "\n\t\tEnter the content: ";
-	cin.ignore();
-	getline(cin, tmpString);
-	searchResult = shelf1->search(tmpString, searchResult);
 
-	for (auto& i : searchResult) std::cout << "\n\t\t" << i->getName()  << std::endl;
 	delete shelf1;
+	
 }
 
 void Student::addDebt(string NetID, int amount) {
