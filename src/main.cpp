@@ -562,12 +562,7 @@ int main() {
 			user3.isStudent();
 			break;
 		case 0:
-			system("cls");
-			cout << "\t\t***************************************************\n";
-			cout << "\t\t*                                                 *\n";
-			cout << "\t\t** Thanks for using our system, have a good day! **\n";
-			cout << "\t\t*                                                 *\n";
-			cout << "\t\t***************************************************\n";
+			SuccessfullyLogoutDisplayMenu()
 			break;
 		default:
 			//SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
