@@ -374,26 +374,7 @@ void StudentLoginMenu() {
 			cout << "\t\t********************************************\n";
 			cout << "\t\tEnter the Option: ";
 			cin >> searchChoice;
-			switch (searchChoice) {
-
-			case 1:
-				user2.searchName();
-				break;
-			case 2:
-				user2.searchYear();
-				break;
-			case 3:
-				user2.searchAuthor();
-				break;
-			case 4:
-				user2.searchTag();
-				break;
-			case 5:
-				user2.searchIdentifier();
-				break;
-			default:
-				cout << "\n\t\tWrong Option!" << endl;
-			}
+			user2.search(searchChoice);
 			
 			break;
 		case 4:

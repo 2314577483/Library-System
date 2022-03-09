@@ -181,7 +181,7 @@ void Student::returnItem(string NetID) {
 	outdataFile.close();
 }
 
-void Student::searchName() {
+void Student::search(int searchChoice) {
 	LibraryItem* shelf1 = new Shelf("Shelf1");
 
 	std::ifstream indataFile(ITEM_FILE, ios::in);
@@ -219,218 +219,39 @@ void Student::searchName() {
 
 	std::vector<LibraryItem* > searchResult;
 	// set search category -- sample given using Year
-	shelf1->setSearch(new SearchByName<LibraryItem>());
 
-	// get search result
-	string tmpString;
-	cout << "\n\t\tEnter the content: ";
-	cin >> tmpString;
-	searchResult = shelf1->search(tmpString, searchResult);
-
-	for (auto& i : searchResult) std::cout << "\t\t" << i->getName() << std::endl;
-	delete shelf1;
-}
-void Student::searchYear() {
-	LibraryItem* shelf1 = new Shelf("Shelf1");
-
-	std::ifstream indataFile(ITEM_FILE, ios::in);
-	if (indataFile.is_open()) {
-		while (getline(indataFile, line)) {
-			stringstream ss(line);
-			Item item;
-			string tmp1;
-			getline(ss, tmp1, ',');
-			item.setName(tmp1);
-
-			string tmp2;
-			getline(ss, tmp2, ',');
-			item.setYear(tmp2);
-
-			string tmp3;
-			getline(ss, tmp3, ',');
-			item.setAuthor(tmp3);
-
-			string tmp4;
-			getline(ss, tmp4, ',');
-			item.setTag(tmp4);
-
-			string tmp5;
-			getline(ss, tmp5, ',');
-			item.setIdentifier(tmp5);
-
-			LibraryItem* item1 = new Item(item);
-
-			shelf1->insertItem(item1);
-
-		}
+	switch (searchChoice) {
+	case 1:
+		shelf1->setSearch(new SearchByName<LibraryItem>());
+		break;
+	case 2:
+		shelf1->setSearch(new SearchByYear<LibraryItem>());
+		break;
+	case 3:
+		shelf1->setSearch(new SearchByAuthor<LibraryItem>());
+		break;
+	case 4:
+		shelf1->setSearch(new SearchByTag<LibraryItem>());
+		break;
+	case 5:
+		shelf1->setSearch(new SearchByIdentifier<LibraryItem>());
+		break;
+	default:
+		cout << "\n\t\tWrong Option!" << endl;
+		break;
 	}
-	indataFile.close();
-
-	std::vector<LibraryItem* > searchResult;
-
-	// set search category -- sample given using Year
-	shelf1->setSearch(new SearchByYear<LibraryItem>());
 
 	// get search result
 	string tmpString;
 	cout << "\n\t\tEnter the content: ";
-	cin >> tmpString;
+	cin.ignore();
+	getline(cin, tmpString);
 	searchResult = shelf1->search(tmpString, searchResult);
 
-	for (auto& i : searchResult) std::cout << "\t\t" << i->getName() << std::endl;
-
+	for (auto& i : searchResult) std::cout << "\t\t" << i->getName()  << std::endl;
 	delete shelf1;
 }
-void Student::searchAuthor() {
-	LibraryItem* shelf1 = new Shelf("Shelf1");
 
-	std::ifstream indataFile(ITEM_FILE, ios::in);
-	if (indataFile.is_open()) {
-		while (getline(indataFile, line)) {
-			stringstream ss(line);
-			Item item;
-			string tmp1;
-			getline(ss, tmp1, ',');
-			item.setName(tmp1);
-
-			string tmp2;
-			getline(ss, tmp2, ',');
-			item.setYear(tmp2);
-
-			string tmp3;
-			getline(ss, tmp3, ',');
-			item.setAuthor(tmp3);
-
-			string tmp4;
-			getline(ss, tmp4, ',');
-			item.setTag(tmp4);
-
-			string tmp5;
-			getline(ss, tmp5, ',');
-			item.setIdentifier(tmp5);
-
-			LibraryItem* item1 = new Item(item);
-
-			shelf1->insertItem(item1);
-
-		}
-	}
-	indataFile.close();
-
-	std::vector<LibraryItem* > searchResult;
-	// set search category -- sample given using Year
-	shelf1->setSearch(new SearchByAuthor<LibraryItem>());
-
-	// get search result
-	string tmpString;
-	cout << "\n\t\tEnter the content: ";
-	cin >> tmpString;
-	searchResult = shelf1->search(tmpString, searchResult);
-
-	for (auto& i : searchResult) std::cout << "\t\t" << i->getName() << std::endl;
-
-	delete shelf1;
-}
-void Student::searchTag() {
-	LibraryItem* shelf1 = new Shelf("Shelf1");
-
-	std::ifstream indataFile(ITEM_FILE, ios::in);
-	if (indataFile.is_open()) {
-		while (getline(indataFile, line)) {
-			stringstream ss(line);
-			Item item;
-			string tmp1;
-			getline(ss, tmp1, ',');
-			item.setName(tmp1);
-
-			string tmp2;
-			getline(ss, tmp2, ',');
-			item.setYear(tmp2);
-
-			string tmp3;
-			getline(ss, tmp3, ',');
-			item.setAuthor(tmp3);
-
-			string tmp4;
-			getline(ss, tmp4, ',');
-			item.setTag(tmp4);
-
-			string tmp5;
-			getline(ss, tmp5, ',');
-			item.setIdentifier(tmp5);
-
-			LibraryItem* item1 = new Item(item);
-
-			shelf1->insertItem(item1);
-
-		}
-	}
-	indataFile.close();
-
-	std::vector<LibraryItem* > searchResult;
-	// set search category -- sample given using Year
-	shelf1->setSearch(new SearchByTag<LibraryItem>());
-
-	// get search result
-	string tmpString;
-	cout << "\n\t\tEnter the content: ";
-	cin >> tmpString;
-	searchResult = shelf1->search(tmpString, searchResult);
-
-	for (auto& i : searchResult) std::cout << "\t\t" << i->getName() << std::endl;
-
-	delete shelf1;
-}
-void Student::searchIdentifier() {
-	LibraryItem* shelf1 = new Shelf("Shelf1");
-
-	std::ifstream indataFile(ITEM_FILE, ios::in);
-	if (indataFile.is_open()) {
-		while (getline(indataFile, line)) {
-			stringstream ss(line);
-			Item item;
-			string tmp1;
-			getline(ss, tmp1, ',');
-			item.setName(tmp1);
-
-			string tmp2;
-			getline(ss, tmp2, ',');
-			item.setYear(tmp2);
-
-			string tmp3;
-			getline(ss, tmp3, ',');
-			item.setAuthor(tmp3);
-
-			string tmp4;
-			getline(ss, tmp4, ',');
-			item.setTag(tmp4);
-
-			string tmp5;
-			getline(ss, tmp5, ',');
-			item.setIdentifier(tmp5);
-
-			LibraryItem* item1 = new Item(item);
-
-			shelf1->insertItem(item1);
-
-		}
-	}
-	indataFile.close();
-
-	std::vector<LibraryItem* > searchResult;
-	// set search category -- sample given using Year
-	shelf1->setSearch(new SearchByIdentifier<LibraryItem>());
-
-	// get search result
-	string tmpString;
-	cout << "\n\t\tEnter the content: ";
-	cin >> tmpString;
-	searchResult = shelf1->search(tmpString, searchResult);
-
-	for (auto& i : searchResult) std::cout << "\t\t" << i->getName() << std::endl;
-
-	delete shelf1;
-}
 void Student::addDebt(string NetID, int amount) {
 
 	vector<vector<std::string>> tmp;
