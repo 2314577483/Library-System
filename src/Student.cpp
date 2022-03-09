@@ -248,7 +248,7 @@ void Student::search(int searchChoice) {
 	getline(cin, tmpString);
 	searchResult = shelf1->search(tmpString, searchResult);
 
-	for (auto& i : searchResult) std::cout << "\t\t" << i->getName()  << std::endl;
+	for (auto& i : searchResult) std::cout << "\n\t\t" << i->getName()  << std::endl;
 	delete shelf1;
 }
 
