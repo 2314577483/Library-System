@@ -445,6 +445,7 @@ void RegisterFunction() {
 	string tempstudentName, tempNetID, tempEmail, tempPassword;
 
 	// define usertype
+	user1.insertInfo("0");
 	user1.insertInfo("newuser");
 	
 	cout << "\n\t\tPlease enter the NetID: ";
