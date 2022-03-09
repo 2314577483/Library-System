@@ -30,6 +30,7 @@ public:
 	void returnItem(string NetID);
 
 	void search(int searchChoice);
+	void accurateSearch(string name);
 
 	void addDebt(string NetID, int amount);
 	void showDebt(string NetID);
