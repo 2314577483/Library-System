@@ -329,3 +329,41 @@ void Student::showDebt(string NetID) {
 
 	cout << "\n\t\tCurrent Debt: " << tmp.at(0) << endl;;
 }
+
+void Student::accurateSearch(string name) {
+
+	std::ifstream indataFile(ITEM_FILE, std::ios::in);
+
+	if (indataFile.is_open()) {
+		while (getline(indataFile, line)) {
+			if (line.find(name) != string::npos) {
+				stringstream ss(line);
+
+				string tmp1;
+				getline(ss, tmp1, ',');
+				cout << "\n\t\tName: " << tmp1 << endl;
+
+				string tmp2;
+				getline(ss, tmp2, ',');
+				cout << "\n\t\tPublished Year: " << tmp2 << endl;
+
+				string tmp3;
+				getline(ss, tmp3, ',');
+				cout << "\n\t\tAuthor: " << tmp3 << endl;
+
+				string tmp4;
+				getline(ss, tmp4, ',');
+				cout << "\n\t\tTag: " << tmp4 << endl;
+				
+				if (line.find("Avail") != string::npos) {
+					cout << "\n\t\tThis Item is currently borrowable." << endl;
+				}
+				else {
+					cout << "\n\t\tThis Item is currently unavailable." << endl;
+				}
+			}
+		}
+	}
+	indataFile.close();
+
+}

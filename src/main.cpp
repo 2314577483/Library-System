@@ -287,10 +287,11 @@ void StudentFunctionDsiplayMenu() {
 	cout << "\t\t**          1.Reset Password              **\n";
 	cout << "\t\t**          2.Display Account Detail      **\n";
 	cout << "\t\t**          3.Search                      **\n";
-	cout << "\t\t**          4.Borrow an item              **\n";
-	cout << "\t\t**          5.Return an item              **\n";
-	cout << "\t\t**          6.Show Debt                   **\n";
-	cout << "\t\t**          7.Add Debt                    **\n";
+	cout << "\t\t**          4.Accurate Search             **\n";
+	cout << "\t\t**          5.Borrow an item              **\n";
+	cout << "\t\t**          6.Return an item              **\n";
+	cout << "\t\t**          7.Show Debt                   **\n";
+	cout << "\t\t**          8.Add Debt                    **\n";
 	cout << "\t\t**          0.Quit                        **\n";
 	cout << "\t\t*                                          *\n";
 	cout << "\t\t********************************************\n";
@@ -333,6 +334,7 @@ void StudentLoginMenu() {
 	
 	int choice;
 	int searchChoice;
+	string tmpName;
 	
 	do {
 		StudentFunctionDsiplayMenu();
@@ -378,15 +380,21 @@ void StudentLoginMenu() {
 			
 			break;
 		case 4:
-			user2.borrowItem(tempNetID);
+			cout << "\n\t\tEnter the Name: ";
+			cin.ignore();
+			getline(cin, tmpName);
+			user2.accurateSearch(tmpName);
 			break;
 		case 5:
-			user2.returnItem(tempNetID);
+			user2.borrowItem(tempNetID);
 			break;
 		case 6:
-			user2.showDebt(tempNetID);
+			user2.returnItem(tempNetID);
 			break;
 		case 7:
+			user2.showDebt(tempNetID);
+			break;
+		case 8:
 			int money;
 			cout << "\n\t\tHow much money you want to add: ";
 
