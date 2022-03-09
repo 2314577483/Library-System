@@ -10,4 +10,5 @@ ADD_EXECUTABLE(main
         src/Student.cpp
         src/User.cpp
         src/Item.cpp
+        src/Librarian.cpp
         )
