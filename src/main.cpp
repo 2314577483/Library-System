@@ -569,7 +569,6 @@ int main() {
                         cout << "\t\t*                                                 *\n";
                         cout << "\t\t***************************************************\n";
 
-			SuccessfullyLogoutDisplayMenu();
 			break;
 		default:
 			//SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_RED);
