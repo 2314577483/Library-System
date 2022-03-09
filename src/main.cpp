@@ -10,7 +10,6 @@
 #include <iostream>
 
 void SuccessfullyLogoutDisplayMenu() {
-	system("cls");
 	cout << "\n\t\t*************************************************\n";
 	cout << "\t\t*                                               *\n";
 	cout << "\t\t**         Successfully log out!               **\n";
@@ -19,7 +18,6 @@ void SuccessfullyLogoutDisplayMenu() {
 }
 
 void SuccessfullyResetPasswordDisplayMenu() {
-	system("cls");
 	cout << "\n\t\t*************************************************\n";
 	cout << "\t\t*                                               *\n";
 	cout << "\t\t*          Successfully reset password!         *\n";
@@ -31,7 +29,6 @@ void SuccessfullyResetPasswordDisplayMenu() {
 }
 
 void SuccessfullyLoginDisplayMenu() {
-	system("cls");
 	cout << "\n\t\t*************************************************\n";
 	cout << "\t\t*                                               *\n";
 	cout << "\t\t*            Successfully Login!                *\n";
@@ -221,7 +218,7 @@ void LibraianLoginMenu() {
 			if (key == "Y" || key == "y") {
 				user4.removeAccount(rAccount);
 
-				system("cls");
+				
 				cout << "\t\t*************************************************\n";
 				cout << "\t\t*                                               *\n";
 				cout << "\t\t**         Successfully remove account!        **\n";
@@ -231,7 +228,7 @@ void LibraianLoginMenu() {
 
 			}
 			else {
-				system("cls");
+				
 				cout << "\t\t*************************************************\n";
 				cout << "\t\t*                                               *\n";
 				cout << "\t\t**         Unsuccessfully remove account!      **\n";
@@ -331,7 +328,7 @@ void StudentLoginMenu() {
 	SuccessfullyLoginDisplayMenu();
 
 	// goto stuent function menu
-	system("cls");
+
 	
 	int choice;
 	int searchChoice;
@@ -403,7 +400,7 @@ void StudentLoginMenu() {
 
 			user2.addDebt(tempNetID, money);
 
-			system("cls");
+			
 			cout << "\t\t*************************************************\n";
 			cout << "\t\t*                                               *\n";
 			cout << "\t\t*            Successfully topup                 *\n";
@@ -494,7 +491,7 @@ void RegisterFunction() {
 
 	user1.saveFile();
 
-	system("cls");
+	
 	cout << "\t\t************************************************\n";
 	cout << "\t\t*                                              *\n";
 	cout << "\t\t*        Successfully Registered!              *\n";
@@ -530,7 +527,7 @@ int main() {
 		std::cin >> choice;
 		switch (choice) {
 		case 1:
-			system("cls");
+			
 			cout << "\t\t****************************************************\n";
 			cout << "\t\t*                                                  *\n";
 			cout << "\t\t**      Welcome to the Student login system!      **\n";
@@ -540,7 +537,7 @@ int main() {
 			StudentLoginMenu();
 			break;
 		case 2:
-			system("cls");
+		
 			cout << "\t\t****************************************************\n";
 			cout << "\t\t*                                                  *\n";
 			cout << "\t\t**     Welcome to the Librarian login system!     **\n";
@@ -550,7 +547,7 @@ int main() {
 			LibraianLoginMenu();
 			break;
 		case 3:
-			system("cls");
+			
 			cout << "\t\t********************************************\n";
 			cout << "\t\t*                                          *\n";
 			cout << "\t\t**     Welcome to the register system!    **\n";
@@ -562,7 +559,7 @@ int main() {
 			user3.isStudent();
 			break;
 		case 0:
-			system("cls");
+			
                         cout << "\t\t***************************************************\n";
                         cout << "\t\t*                                                 *\n";
                         cout << "\t\t** Thanks for using our system, have a good day! **\n";
