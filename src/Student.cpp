@@ -288,7 +288,7 @@ void Student::search(int searchChoice) {
 	}
 
 	// get search result
-
+	shelf1->clearItem();
 	delete shelf1;
 	
 }
