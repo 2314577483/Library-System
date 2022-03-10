@@ -15,8 +15,12 @@ ADD_EXECUTABLE(main
         )
         
 ADD_EXECUTABLE(test
-        tests/test.cpp
+        tests/unit_tests.cpp
+        tests/NewuserTests.hpp
+        tests/StudentTests.hpp
+        tests/LibrarianTests.hpp
         )
+
 
 TARGET_LINK_LIBRARIES(test gtest)
 TARGET_COMPILE_DEFINITIONS(test PRIVATE gtest_disable_pthreads=ON)
