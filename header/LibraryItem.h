@@ -40,6 +40,10 @@ public:
     virtual void setLocation(LibraryItem* location) { this->location = location; }
 
     virtual LibraryItem* getLocation() { return location; }
+    void clearItem() {
+        for (auto& itemList : itemLists) delete itemList;
+        itemLists.clear();
+    }
 };
 
 
