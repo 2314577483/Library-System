@@ -5,7 +5,7 @@
 #include "Item_test.hpp"
 #include "Shelf_test.hpp"
 #include "Book_test.h"
-#include "Article_tests.hpp"
+#include "Article_test.hpp"
 #include "Video_test.hpp"
 #include "Search_tests.hpp"
 
