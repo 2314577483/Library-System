@@ -1,7 +1,9 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 
 SET(CMAKE_CXX_STANDARD 11)
-
+include_directories(src)
+include_directories(header)
+include_directories(tests)
 ADD_SUBDIRECTORY(googletest)
 
 ADD_EXECUTABLE(main
@@ -13,14 +15,10 @@ ADD_EXECUTABLE(main
         src/Item.cpp
         src/Librarian.cpp
         )
-        
+
 ADD_EXECUTABLE(test
         tests/unit_tests.cpp
-        tests/NewuserTests.hpp
-        tests/StudentTests.hpp
-        tests/LibrarianTests.hpp
         )
-
 
 TARGET_LINK_LIBRARIES(test gtest)
 TARGET_COMPILE_DEFINITIONS(test PRIVATE gtest_disable_pthreads=ON)
