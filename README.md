@@ -51,6 +51,7 @@ We can improve productivity and efficiency by designing and implementing a softw
 
   The reason we use Composite Pattern is that "book", "article" and "video" are primitives, and we can add the "category (shelf)"as the composite, so that we can store the "book"," article " and "video" in the "category (shelf)". Meanwhile, we also save "book", "article", "video" and "category (shelf)" into the "libraryItem". Thus "libraryItem" is used as a component, which will constitute our Composite Pattern. We are using this design pattern to improve efficiency and help us write code better and clearer.
 
+# Phase IV
  ## Screenshots
  Welcome Mneu
  
