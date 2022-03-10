@@ -110,7 +110,7 @@ We can improve productivity and efficiency by designing and implementing a softw
  > $ git clone --recursive <github-repo-url>
  
  Use CMake to compiler the program:
- > $ CMake .
+ > $ CMake3 .
  
  > $ make
  
