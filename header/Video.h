@@ -12,7 +12,7 @@ private:
     std::string duration;
 public:
     std::string getDuration() {return duration;}
-    void setDuration(int Duration) {duration = Duration;}
+    void setDuration(std::string Duration) {duration = Duration;}
     //virtual std::vector<LibraryItem*> search();
 };
 
