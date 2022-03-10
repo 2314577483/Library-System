@@ -125,11 +125,10 @@ We can improve productivity and efficiency by designing and implementing a softw
  ```
  
  Run the valgrind by following commands:
- ``` $ g++ -g -O0 -o main main.cpp
-  $ ./main
+ ``` 
+ $ g++ -g -O0 -o main main.cpp
+ $ ./main
  ```
- 
- Valgrind
  
  ![image](https://github.com/cs100/final-project-zliu308-jlin297-zxiao031-wfeng026/blob/b8ea61a0c87b0fb8fb7354a3fc9c5192aaac0ef8/Screenshots/Valgrind.png)
  
