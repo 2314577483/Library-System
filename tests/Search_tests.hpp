@@ -109,7 +109,7 @@ TEST(SearchTest, canSearchByName) {
     std::stringstream ss;
     print_Location(ss, searchResult);
     std::string s = ss.str();
-    EXPECT_EQ("\n", s);
+    EXPECT_EQ("0 \n", s);
     delete tmp1;
     delete shelf1;
 
