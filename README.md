@@ -105,7 +105,7 @@ We can improve productivity and efficiency by designing and implementing a softw
  
  Windows: Put all files into a project after downloading them, then run the solution file.
  
- Linux: Use CMake to compiler the program after downloading them. Remember to use `git clone --recursive <github-repo-url` command to fully clone the google test into the local repository if you decide to use the command line to execute the program.
+ Linux: Use CMake to compiler the program after downloading them. Remember to use `git clone --recursive <github-repo-url>` command to fully clone the google test into the local repository if you decide to use the command line to execute the program.
  
  Use recursive clone command to download all fils including gtest:
  ``` 
