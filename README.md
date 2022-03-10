@@ -1,3 +1,4 @@
+[![FinalPorject](https://github.com/cs100/final-project-zliu308-jlin297-zxiao031-wfeng026/actions/workflows/main.yml/badge.svg)](https://github.com/cs100/final-project-zliu308-jlin297-zxiao031-wfeng026/actions/workflows/main.yml)
 # Library System
 
 Authors: [Zhenjie Liu](https://github.com/2314577483), [Zichao Xiao](https://github.com/Zichao031), [William Feng](https://github.com/WwwwwFeng), [Jiale Lin](https://github.com/jlin297)
