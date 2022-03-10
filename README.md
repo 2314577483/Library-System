@@ -105,16 +105,15 @@ We can improve productivity and efficiency by designing and implementing a softw
  ``` 
  $ git clone --recursive https://github.com/cs100/final-project-zliu308-jlin297-zxiao031-wfeng026.git
  ```
- If you still can not compile the program and it shows "does not contain a CMakeLists.txt file". Try following command:
-  ```
- $ rm -rf googletest
- $ git submodule update --init --recursive
- ```
- 
  Use CMake to compile the program:
  ```
  $ cmake3 .
  $ make
+ ```
+ If you still can not compile the program and it shows `does not contain a CMakeLists.txt file`. Try following command:
+ ```
+ $ rm -rf googletest
+ $ git submodule update --init --recursive
  ```
  After these steps, you will see these folders are created.
  ```
