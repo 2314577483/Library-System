@@ -117,7 +117,7 @@ We can improve productivity and efficiency by designing and implementing a softw
  $ cmake3 .
  $ make
  ```
- After these steps, you will ba able to see folders are created.
+ After these steps, you will see these folders are created.
  ```
  main
  test
