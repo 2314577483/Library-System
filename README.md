@@ -130,4 +130,8 @@ We can improve productivity and efficiency by designing and implementing a softw
  ``` 
  $ valgrind --leak-check=full ./test
  ```
+ ![image](https://github.com/cs100/final-project-zliu308-jlin297-zxiao031-wfeng026/blob/0bae8b365da92d8f6b2c5e4fed5ce314d590a5fa/Screenshots/1.png)
+ ![image](https://github.com/cs100/final-project-zliu308-jlin297-zxiao031-wfeng026/blob/0bae8b365da92d8f6b2c5e4fed5ce314d590a5fa/Screenshots/2.png)
+ ![image](https://github.com/cs100/final-project-zliu308-jlin297-zxiao031-wfeng026/blob/0bae8b365da92d8f6b2c5e4fed5ce314d590a5fa/Screenshots/3.png)
+ ![image](https://github.com/cs100/final-project-zliu308-jlin297-zxiao031-wfeng026/blob/0bae8b365da92d8f6b2c5e4fed5ce314d590a5fa/Screenshots/4.png)
  ![image](https://github.com/cs100/final-project-zliu308-jlin297-zxiao031-wfeng026/blob/c51a47932a1be4b8432cf8974b61a116b856ee84/Screenshots/Test%20Valgrind.png)
