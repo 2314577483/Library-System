@@ -116,13 +116,14 @@ We can improve productivity and efficiency by designing and implementing a softw
  ```
  $ cmake3 .
  $ make
- $ ./main
  ```
+ After these steps, you will ba able to see files `main` and `test` are created.
  
- Run the google tests:
- ```
- $ ./test
- ```
+ Type command `./main` to run the program. 
+ 
+ ## Testing
+ 
+ You can also run the unit test for this program. Type command `./test` will show following unit test result.
  
  Run the valgrind by following commands:
  ``` 
@@ -130,9 +131,3 @@ We can improve productivity and efficiency by designing and implementing a softw
  $ ./main
  $ valgrind --leak-check=full ./main
  ```
- 
- ![image](https://github.com/cs100/final-project-zliu308-jlin297-zxiao031-wfeng026/blob/b8ea61a0c87b0fb8fb7354a3fc9c5192aaac0ef8/Screenshots/Valgrind.png)
- 
- ## Testing
- > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
- 
