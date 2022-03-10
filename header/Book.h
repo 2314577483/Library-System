@@ -19,7 +19,7 @@ public:
 
 
     void setPublisher(std::string Publisher) {publisher = Publisher;}
-    void setISBN(std:: string ISBN) {ISBN = ISBN;}
+    void setISBN(std:: string tmpISBN) {ISBN = tmpISBN;}
 
     //virtual std::vector<LibraryItem*> search();
 };
