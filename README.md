@@ -130,7 +130,5 @@ We can improve productivity and efficiency by designing and implementing a softw
  
  Run the valgrind by following commands:
  ``` 
- $ g++ -g -O0 -o main main.cpp
- $ ./main
- $ valgrind --leak-check=full ./main
+ $ valgrind --leak-check=full ./test
  ```
