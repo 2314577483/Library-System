@@ -102,7 +102,6 @@ We can improve productivity and efficiency by designing and implementing a softw
 
  
  ## Installation/Usage
- ![Final Project UML](https://user-images.githubusercontent.com/97133827/157556499-0d831a8c-ca3d-43ba-88b4-6b2393fc0107.png)
  
  You can either use Linux or Windows system to compiler our program.
  
@@ -111,21 +110,26 @@ We can improve productivity and efficiency by designing and implementing a softw
  Linux: Use CMake to compiler the program after downloading them. Remember to use "git clone --recursive <github-repo-url>" command to fully clone the google test into the local repository if you decide to use the command line to execute the program.
  
  Use recursive clone command to download all fils including gtest:
- ``` $ git clone --recursive https://github.com/cs100/final-project-zliu308-jlin297-zxiao031-wfeng026.git```
+ ``` 
+ $ git clone --recursive https://github.com/cs100/final-project-zliu308-jlin297-zxiao031-wfeng026.git
+ ```
  
  Use CMake to compiler the program:
- 
- ```$ cmake3 .
+ ```
+ $ cmake3 .
  $ make
  $ ./main
  ```
  
  Run the google tests:
- ```$ ./test```
+ ```
+ $ ./test
+ ```
  
  Run the valgrind by following commands:
  ``` $ g++ -g -O0 -o main main.cpp
-  $ ./main```
+  $ ./main
+ ```
  
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
