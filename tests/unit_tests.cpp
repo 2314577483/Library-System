@@ -2,12 +2,12 @@
 #include "NewuserTests.hpp"
 #include "StudentTests.hpp"
 #include "LibrarianTests.hpp"
-#include "ItemTests.hpp"
-#include "ShelfTests.hpp"
-#include "BookTests.hpp"
-#include "ArticleTests.hpp"
-#include "VideoTests.hpp"
-#include "SearchTests.hpp"
+#include "Item_test.hpp"
+#include "Shelf_test.hpp"
+#include "Book_test.h"
+#include "Article_tests.hpp"
+#include "Video_test.hpp"
+#include "Search_tests.hpp"
 
 
 int main(int argc, char **argv) {
