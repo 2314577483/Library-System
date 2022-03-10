@@ -117,9 +117,12 @@ We can improve productivity and efficiency by designing and implementing a softw
  $ cmake3 .
  $ make
  ```
- After these steps, you will ba able to see files `main` and `test` are created.
- 
- Type command `./main` to run the program. 
+ After these steps, you will ba able to see folders are created.
+ ```
+ main
+ test
+ ```
+ Finally, we can type command `./main` to run the program. 
  
  ## Testing
  
