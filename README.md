@@ -95,6 +95,10 @@ We can improve productivity and efficiency by designing and implementing a softw
  Student Search Menu
  
  ![image](https://user-images.githubusercontent.com/49822431/157552879-e63fa09c-d78d-47f9-989a-0888c548165b.png)
+ 
+ Valgrind
+ 
+ https://github.com/cs100/final-project-zliu308-jlin297-zxiao031-wfeng026/blob/b8ea61a0c87b0fb8fb7354a3fc9c5192aaac0ef8/Screenshots/Valgrind.png
 
  
  ## Installation/Usage
