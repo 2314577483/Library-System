@@ -125,7 +125,7 @@ We can improve productivity and efficiency by designing and implementing a softw
  
  ## Testing
  
- You can also run the unit test for this program. Type command `./test` will show following unit test result.
+ You can also run the unit test for this program. Type command `./test` will show following unit test result. We created 53 test cases to test our different program features, such as checking the existence of an account; checking if the account password matches; checking account roles; students finding books, borrowing and returning books; administrators adding books, deleting books and deleting users, etc.
  
  Run the valgrind by following commands:
  ``` 
