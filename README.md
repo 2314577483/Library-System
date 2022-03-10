@@ -101,7 +101,7 @@ We can improve productivity and efficiency by designing and implementing a softw
  
  ## Installation/Usage
  
- You can either use Linux or Windows system to compiler our program.
+ You can either use Linux or Windows system to compile our program.
  
  Windows: Put all files into a project after downloading them, then run the solution file.
  
@@ -111,8 +111,13 @@ We can improve productivity and efficiency by designing and implementing a softw
  ``` 
  $ git clone --recursive https://github.com/cs100/final-project-zliu308-jlin297-zxiao031-wfeng026.git
  ```
+ If you still can not compile the program and it shows "does not contain a CMakeLists.txt file". Try following command:
+  ```
+ $ rm -rf googletest
+ $ git submodule update --init --recursive
+ ```
  
- Use CMake to compiler the program:
+ Use CMake to compile the program:
  ```
  $ cmake3 .
  $ make
