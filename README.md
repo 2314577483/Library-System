@@ -96,9 +96,7 @@ We can improve productivity and efficiency by designing and implementing a softw
  
  ![image](https://user-images.githubusercontent.com/49822431/157552879-e63fa09c-d78d-47f9-989a-0888c548165b.png)
  
- Valgrind
  
- ![image](https://github.com/cs100/final-project-zliu308-jlin297-zxiao031-wfeng026/blob/b8ea61a0c87b0fb8fb7354a3fc9c5192aaac0ef8/Screenshots/Valgrind.png)
 
  
  ## Installation/Usage
@@ -107,7 +105,7 @@ We can improve productivity and efficiency by designing and implementing a softw
  
  Windows: Put all files into a project after downloading them, then run the solution file.
  
- Linux: Use CMake to compiler the program after downloading them. Remember to use "git clone --recursive <github-repo-url>" command to fully clone the google test into the local repository if you decide to use the command line to execute the program.
+ Linux: Use CMake to compiler the program after downloading them. Remember to use `git clone --recursive <github-repo-url` command to fully clone the google test into the local repository if you decide to use the command line to execute the program.
  
  Use recursive clone command to download all fils including gtest:
  ``` 
@@ -130,6 +128,10 @@ We can improve productivity and efficiency by designing and implementing a softw
  ``` $ g++ -g -O0 -o main main.cpp
   $ ./main
  ```
+ 
+ Valgrind
+ 
+ ![image](https://github.com/cs100/final-project-zliu308-jlin297-zxiao031-wfeng026/blob/b8ea61a0c87b0fb8fb7354a3fc9c5192aaac0ef8/Screenshots/Valgrind.png)
  
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
