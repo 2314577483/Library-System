@@ -98,7 +98,7 @@ We can improve productivity and efficiency by designing and implementing a softw
  
  Valgrind
  
- https://github.com/cs100/final-project-zliu308-jlin297-zxiao031-wfeng026/blob/b8ea61a0c87b0fb8fb7354a3fc9c5192aaac0ef8/Screenshots/Valgrind.png
+ ![image](https://github.com/cs100/final-project-zliu308-jlin297-zxiao031-wfeng026/blob/b8ea61a0c87b0fb8fb7354a3fc9c5192aaac0ef8/Screenshots/Valgrind.png)
 
  
  ## Installation/Usage
